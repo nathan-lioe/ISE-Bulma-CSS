@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block page_name %}{{ page_name }}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+<body>
+    <nav class="navbar">
+        <a href="{{ url_for('home') }}" class="nav-link">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="{{ url_for('all_pages') }}" class="nav-link">
+            <i class="fas fa-file-alt"></i> Pages
+        </a>
+        <a href="{{ url_for('about') }}" class="nav-link">
+            <i class="fas fa-info-circle"></i> About
+        </a>
+    </nav>
+
+    <main class="content">
+        {% block content %}{{ page_content }}{% endblock %}
+    </main>
+
+</body>
+</html>

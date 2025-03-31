@@ -1,0 +1,68 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+/* Base styles - keep your existing background */
+html {
+    background-color: lightblue;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Enhanced navigation */
+nav {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 15px 25px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #0e566b;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #083845;
+    text-decoration: underline;
+}
+
+/* Content area */
+.content {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Keep your heading styles */
+h3 {
+    margin-top: 20px;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #0e566b;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(14, 86, 107, 0.2);
+}
+
+p {
+    margin-top: 10px;
+    margin-left: 15px;
+    background-color: transparent;
+}
+
+/* Responsive container */
+main {
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 0 25px;
+}
